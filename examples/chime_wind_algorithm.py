@@ -18,8 +18,8 @@ Implementation Notes
 """
 
 import time
-import board
 import random
+import board
 import audiobusio
 import audiomixer
 from simpleio import map_range
