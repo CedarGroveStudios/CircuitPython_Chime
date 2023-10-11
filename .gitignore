@@ -41,6 +41,7 @@ _build
 
 # MacOS-specific files
 *.DS_Store
+media/.DS_Store
 
 # IDE-specific files
 .idea

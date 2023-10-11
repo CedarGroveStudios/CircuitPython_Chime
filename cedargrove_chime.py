@@ -38,6 +38,7 @@ import ulab.numpy as np
 from cedargrove_midi_tools import name_to_note
 
 
+# pylint: disable=too-few-public-methods
 class Voice:
     """The predefined synth voices. Bell is a single-capped tube
     with empirical overtones. Perfect is a dual-capped tube with algorithmically
@@ -49,6 +50,7 @@ class Voice:
     Tubular = "tubular"
 
 
+# pylint: disable=too-few-public-methods
 class Scale:
     """A collection of common wind chime musical note scales from
     Tubular Bell Chimes Design Handbook, Lee Hite."""
@@ -77,6 +79,7 @@ class Scale:
     SandCast = ["F6", "A#6"]  # brass bells
 
 
+# pylint: disable=too-few-public-methods
 class Material:
     """The attack time, attack level, and release time for various chime/bell
     materials."""
@@ -89,6 +92,7 @@ class Material:
     Brass = [0.02, 1.0, 2.5]
 
 
+# pylint: disable=too-few-public-methods
 class Striker:
     """The attack time and attack level ratios for various striker materials."""
 
@@ -134,6 +138,9 @@ class Overtones:
     ]
 
 
+# pylint: disable=too-many-instance-attributes
+# pylint: disable=dangerous-default-value
+# pylint: disable=too-many-arguments
 class Chime:
     """A synthesizer for wind chime or bell sounds using synthio."""
 
@@ -210,7 +217,7 @@ class Chime:
 
         # Create scale table
         self._scale = []
-        for index, note in enumerate(scale):
+        for _, note in enumerate(scale):
             self._scale.append(
                 min(max(name_to_note(note) + self._scale_offset, 0), 127)
             )
@@ -240,10 +247,11 @@ class Chime:
         """The chime scale list in SPN."""
         return self._scale
 
+    # pylint: disable=dangerous-default-value
     @scale.setter
     def scale(self, new_scale=Scale.CNine):
         self._scale = []
-        for index, note in enumerate(new_scale):
+        for _, note in enumerate(new_scale):
             self._scale.append(
                 min(max(name_to_note(note) + self._scale_offset, 0), 127)
             )
@@ -270,7 +278,7 @@ class Chime:
         root_note_freq = synthio.midi_to_hz(root_note)
         adjusted_amplitude = amplitude * self._loudness
 
-        self._notes = (
+        notes = (
             synthio.Note(
                 root_note_freq * self._overtones[0][0],
                 amplitude=adjusted_amplitude * self._overtones[0][1],
@@ -293,5 +301,5 @@ class Chime:
             ),
         )
 
-        self.synth.press(self._notes)
-        self.synth.release(self._notes)
+        self.synth.press(notes)
+        self.synth.release(notes)

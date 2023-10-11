@@ -106,5 +106,3 @@ Acknowledgements and Thanks
 
 Also, special thanks to Jeff Epler and Adafruit for the comprehensive design and implementation
 of the amazing CircuitPython `synthio` module.
-
-
