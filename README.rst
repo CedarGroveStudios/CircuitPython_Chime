@@ -6,7 +6,7 @@ Introduction
     :alt: Discord
 
 .. image:: https://github.com/CedarGroveStudios/CircuitPython_Chime/workflows/Build%20CI/badge.svg
-    :target: https://github.com/CedarGroveStudios/CircuitPython_PunkConsole/actions
+    :target: https://github.com/CedarGroveStudios/CircuitPython_Chime/actions
     :alt: Build Status
 
 .. image:: https://img.shields.io/badge/code%20style-black-000000.svg
