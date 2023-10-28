@@ -4,3 +4,4 @@
 # SPDX-License-Identifier: MIT
 
 Adafruit-Blinka
+cedargrove_midi_tools
