@@ -86,7 +86,7 @@ API documentation for this library can be found in `Cedargrove_Chime_API <https:
 
 .. image:: https://github.com/CedarGroveStudios/CircuitPython_Chime/blob/main/media/chime_api_page3.png
 
-.. image:: https://github.com/CedarGroveStudios/CircuitPython_Chime/blob/main/media/chime_initalize.png
+.. image:: https://github.com/CedarGroveStudios/CircuitPython_Chime/blob/main/media/chime_initialize.png
 
 .. image:: https://github.com/CedarGroveStudios/CircuitPython_Chime/blob/main/media/chime_strike.png
 
