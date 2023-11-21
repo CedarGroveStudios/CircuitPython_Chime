@@ -92,6 +92,7 @@ API documentation for this library can be found in `Cedargrove_Chime_API <https:
 
 Attribution: Patch Symbols from PATCH & TWEAK by Kim Bjørn and Chris Meyer, published by Bjooks, are licensed under Creative Commons CC BY-ND 4.0.
 Some Patch Symbols were modified to create the synthio symbols ``BlockInput``, ``MixerVoice``, ``Note``, ``Synthesizer``, ``sample``, and ``voice``.
+
 For additional detail about ``synthio`` diagrams, see `Symbols for synthio Objects <https://adafruit-playground.com/u/CGrover/pages/symbols-for-synthio-objects>`_
 
 Planned Updates
